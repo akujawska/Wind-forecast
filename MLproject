@@ -1,0 +1,9 @@
+name: wind_forecast
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      alpha: {type: float, default: 0.0.1}
+    command: "python wind_forecast.py {alpha}"
